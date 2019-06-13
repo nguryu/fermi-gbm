@@ -228,7 +228,6 @@ def ifft_white(log_f_galaxy, log_res_f_galaxy, white_real, white_im, white_res_r
     ifft_y = []
     ifft_res_y= []
 
-
     # *** CREATE WHITENED Y-AXIS *** #
     for i in range(len(log_f_galaxy)):
         white_y.append(complex(white_real[i], white_im[i]))
