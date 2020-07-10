@@ -1,4 +1,3 @@
-import gbm
 import os
 
 yy = ['08','09','10','11','12','13','14','15','16','17','18','19']
@@ -28,6 +27,3 @@ for i in range(len(yy)):
                 dest = "/Users/RonnyNguyen/Desktop/FermiGBMSummer2020/data_dir/glg_poshist_all_"+yy[i]+mm[j]+dd[k]+"_v00.fit"
 
                 os.system("curl  %s > %s" % (link, dest))
-'''
-"https://heasarc.gsfc.nasa.gov/FTP/fermi/data/gbm/daily/YYYY/MM/DD/current/glg_poshist_all_YYMMDD_v00.fit"
-'''
