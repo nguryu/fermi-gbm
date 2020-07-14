@@ -182,7 +182,6 @@ with open(path+'not_visible.txt', 'w') as outfile2:
     for x in zip(*datalist2):
         outfile2.write('|{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|\n'.format(*x))
 
-# Write relevant data into new file
 with open(path+'visible.txt', 'w') as outfile3:
     datalist3 = [visible_name,
     visible_obsid,
