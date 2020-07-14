@@ -1,5 +1,5 @@
 # This program reads in the Swift Master Catalog and searches for SGR sources.
-# The SGR sources, along with relevant information, are wirrten into a file.
+# The SGR sources, along with relevant information, are written into a file.
 
 # Inputs
 path = '/Users/RonnyNguyen/Desktop/FermiGBMSummer2020/data_dir/'
