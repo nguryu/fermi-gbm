@@ -7,7 +7,7 @@ from gbm.data.poshist import PosHist
 
 # Inputs
 path = '/Users/RonnyNguyen/Desktop/FermiGBMSummer2020/data_dir/'
-catalogue_file = path + 'sgr_list.txt'
+catalogue_file = path + 'swift_sgr_list.txt'
 
 # ================================================== #
 # *** SGR LIST *** #
@@ -154,7 +154,7 @@ for i in range(len(name)):
           visible_archv_date.append(archv_date[i])
 
 # Write relevant data into new file
-with open(path+'within_saa.txt', 'w') as outfile1:
+with open(path+'swift_within_saa.txt', 'w') as outfile1:
     datalist1 = [within_saa_name,
     within_saa_obsid,
     within_saa_ra,
@@ -168,7 +168,7 @@ with open(path+'within_saa.txt', 'w') as outfile1:
     for x in zip(*datalist1):
         outfile1.write('|{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|\n'.format(*x))
 
-with open(path+'not_visible.txt', 'w') as outfile2:
+with open(path+'swift_not_visible.txt', 'w') as outfile2:
     datalist2 = [not_visible_name,
     not_visible_obsid,
     not_visible_ra,
@@ -182,7 +182,7 @@ with open(path+'not_visible.txt', 'w') as outfile2:
     for x in zip(*datalist2):
         outfile2.write('|{0}|{1}|{2}|{3}|{4}|{5}|{6}|{7}|{8}|{9}|\n'.format(*x))
 
-with open(path+'visible.txt', 'w') as outfile3:
+with open(path+'swift_visible.txt', 'w') as outfile3:
     datalist3 = [visible_name,
     visible_obsid,
     visible_ra,
